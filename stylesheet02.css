@@ -1,12 +1,32 @@
+html {
+  background-color: black;
+}
+
 #wholepage {
   width: 1080px;
-  height: 0 auto;
+  margin: 0 auto;
+  color:white;
+
 }
 
 /*button*/
+button {
+  background-color: #56445D;
+  border-color: #56445D;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  position: relative;
+  top: 60px;
+  margin: 0 auto;
+
+}
+
+
 .ebutton {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-color: rgba(0, 0, 0, .5);
   position: absolute;
   top: 0;
@@ -19,15 +39,14 @@
 
 .ebutton-content {
   width: 600px;
-  height: 680px;
+  height: 0 auto;
   background-color: white;
   padding: 15px 20px;
   border: 3px solid black;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 .ebutton-content h1 {
-  border-bottom: 3px solid black;
   font-size: 2rem;
   font-weight: bold;
   padding: 15px 15px;
@@ -51,6 +70,164 @@
   cursor: pointer;
 }
 
-/*Button css ends here*/
+/*Button css ends here, index.html Starts below*/
+a {
+  color: #91F291;
+  text-decoration: none;
+}
 
-/*Index html css Starts here*/
+a:hover {
+  color: #75DDDD;
+}
+
+a:before {
+  content: '';
+  display: block;
+  background-color: #91F291;
+}
+
+.container {
+  width:80%;
+  margin: 0x auto;
+}
+
+
+header {
+  width: 1080px;
+
+  text-align: center;
+  border-color: #56445D;
+  border-width: 10px;
+  border-style: solid;
+  background: #373F51;
+  max-height: 220px;
+}
+
+header::after{
+  content:'';
+  display: table;
+  clear: both;
+}
+
+.logo{
+  float:right;
+  padding: 10px;
+  position: relative;
+  left: 210px;
+}
+
+nav {
+  float: left;
+}
+
+nav ul{
+
+  padding: 10px;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+  padding-top: 10px;
+
+  position: relative;
+  bottom: 80px;
+}
+
+nav a{
+  color: #91F291;
+  text-decoration: none;
+  text-transform: uppercase;
+  Font-size: 14px;
+}
+
+nav a:hover {
+  color: #75DDDD
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #91F291;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 500ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+.content-body {
+  text-align: center;
+  color: orange;
+  width: 100%;
+  background-color: #373F51;
+  border: 10px solid;
+  border-color: #56445D;
+}
+
+#maintitle {
+  text-align: justify;
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+  border-color: #56445D;
+  padding: 20px 10px;
+}
+
+#maintitle h1 {
+  text-align: center;
+}
+
+#maintitle h2 {
+  text-align: center;
+}
+
+#teamprofile {
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+  border-color: #56445D;
+}
+
+.bradleymain {
+  display: inline-block;
+  text-align: center;
+  border-top: 5px solid;
+  border-bottom: 5px solid;
+  border-color: #56445D;
+  padding: 20px 10px;
+}
+
+.bradleymain img {
+  float: left;
+}
+
+.bradleymain p {
+  padding: 20px 10px;
+  display: flex;
+  text-align: justify;
+}
+
+.bradleymain h3 {
+  text-align: center;
+}
+
+.bradleymain li {
+  width: 80%;
+  text-align: left;
+  position: relative;
+  left: 20px;
+
+}
+
+
+/*Index html css Ends here*/
+
+#scopemain h1 {
+  overflow: auto;
+}
