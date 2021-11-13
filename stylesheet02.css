@@ -15,14 +15,16 @@ img {
 }
 /*button*/
 button {
-  background-color: #56445D;
+  background-color: #333;
   border-color: #56445D;
   border-radius: 20px;
   padding: 10px 20px;
+  font-family: "Russo One", sans-serif;
   font-size: 1.5rem;
-  font-weight: bold;
+
   position: relative;
   top: 60px;
+  left: 200px;
   margin: 0 auto;
 
 }
@@ -182,8 +184,8 @@ nav a:hover::before {
 
 #test {
   list-style: none;
-<<<<<<< HEAD
-=======
+}
+
 #maintitle h2 {
   text-align: center;
 }
@@ -230,9 +232,9 @@ nav a:hover::before {
 /*Index html css Ends here*/
 
 
-=======
-}
->>>>>>> 7bc6490375222e421bbe13b49e865f5d593f0625
+
+
+
 
 
 /*-----------------------lachlans test CSS starts here------------------------*/
@@ -300,7 +302,7 @@ nav a:hover::before {
   display: none;
   position: absolute;
   background-color: #333;
-  max-width: 167px;
+  max-width: 187px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 20px;
@@ -313,7 +315,7 @@ nav a:hover::before {
   display: none;
   position: absolute;
   background-color: #333;
-  min-width: 123px;
+  min-width: 136px;
 
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
@@ -324,7 +326,7 @@ nav a:hover::before {
   display: none;
   position: absolute;
   background-color: #333;
-  max-width: 135px;
+  max-width: 144px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
   border-radius: 20px;
