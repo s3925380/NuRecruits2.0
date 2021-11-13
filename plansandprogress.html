@@ -5,7 +5,8 @@
 <head>
   <meta charset="UTF-8">
   <title>nu recruITs</title>
-  <link rel="stylesheet" href="">
+  <link rel="stylesheet" href="stylesheet02.css">
+  <script defer src="button.js"></script>
 </head>
 
 <main>
@@ -16,7 +17,7 @@
   <header>
     <div class="container">
       <a href="index.html">
-      <button type="button" name="button">!!SEND AN EMERGENCY DRONE NOW!!</button>
+      <button><a href="#" id="buttonemerg" class="buttonemerg"> !!! SEND A DRONE NOW !!!</A></button>
       <img src="images/logo_2.png" alt="group logo" class="logo" height="200px">
       </a>
        <nav>
@@ -34,17 +35,27 @@
      </div>
   </header>
 
+
+    <div class="ebutton">
+      <div class="ebutton-content">
+          <div class ="closebutton">&times</div>
+        <h2><p> An Emergency drone is on the way.</p><p>Please keep a close eye for any change in symptoms.</p></h2>
+
+
+      </div>
+    </div>
+
   <h1>Plans and Progress</h1>
 
   <h2>Drone Program Development</h2>
 
   <p>Our team has decided to write a program that will act as a control centre for our drones, allowing drone pilots to monitor and navigate our drones as they fly to patients. This control centre should allow the user to set static flight paths for a drone to fly and should also allow for flight control via user input. Whenever the drone pilot at the control centre takes manual control of the drone, they will need to be able to see a video feed from the drone to ensure a correct flight path.  </p>
 
-  <h2>Existing Skills</h2>
+  <h3>Existing Skills</h3>
 
   <p>The programming team in our group consists of Lachlan and Jacob. Each team member has been assigned roles focused around conducting the research and producing a prototype program to demonstrate our ideas. Knowledge of programming in python is limited between Lachlan and Jacob, with Lachlan having less than 12 months experience and Jacob having no experience in python. Because of this limited knowledge, the team planned to conduct research and share whatever python knowledge they have with each other in order to get the best understanding possible in the limited time available.</p>
 
-  <h2>Research</h2>
+  <h3>Research</h3>
 
   <p>The first research conducted by the programming team was directed towards determining which hardware and software was suitable for the task at hand. Because of Lachlan’s existing python knowledge, the team decided to research if there are any programmable drones compatible with the programming language. While the team plans to develop their drones in-house in the future, currently it is not possible due to financial limitations and time constraints, meaning that 3rd party drone hardware will be required by the team in order to develop a prototype.</p>
 
@@ -54,57 +65,74 @@
 
   <p>During our research we discovered there are many online tutorials that provide techniques to program drones (Develop Path Planning GUI for DJI Tello, 2021) (DJI Tello - Getting Started with Software Development, 2021) (Drone Programming With Python Course, 2021) (Easy Programming of Tello Drone | Python OpenCV Object Tracking, 2021), we attempted to utilise these to take our first steps at writing code, however we underestimated how difficult this would be quickly realised that a significant number of modifications and troubleshooting would be necessary to achieve our goals.</p>
 
-  <h2>Initial Development Issues</h2>
+  <h3>Initial Development Issues</h3>
 
   <p>The first problem was encountered when attempting to initiate connection to the drone. We attempted to create a drone object of the ‘Tello’ class and then connect to the drone via the network using the .connect() method. This produced an error which was determined to be because of an incompatible version of python. The existing version of python was the most recent release, python 3.10.0, however due to OpenCV instability, python version 3.7.6 (Download Python, 2021) was installed. Once this was installed there was still communication errors between the drone and the computer running the code. These errors were determined to be due to the firewall blocking communication to the drone, this was fixed by temporarily disabling the firewall during testing however an exemption will be added to allow for communication past an active firewall.</p>
 
-  <h2>Design Descisions</h2>
+  <h3>Design Descisions</h3>
 
   <p>Once all connection issues were out of the way, the team began designing how the program would be structured. It was decided that the program would feature a user interface with buttons that execute different functions within the program. The functions that these buttons execute will be a manual flight control function with a live camera feed from the drone and a function that allows for input of set flight paths. The user should be able to switch between these two functions at will. The program must feature an emergency abort feature that disengages the drone and ends the program.</p>
 
-  <h2>Automatice Control Program Development</h2>
+  <h3>Automatice Control Program Development</h3>
 
   <p>The first function the team began developing was the static flight path function. There were many errors during development, due to extremely limited knowledge of the djitellopy library, however by utilising the djitellopy SDK 1.3.0.0 (Tello SDK 1.3.0.0, 2021), djitellopy python library and skills developed from various online guides and tutorials, the team managed to develop code that successfully controls a drone by entering set directions for the drone to travel (see appendix). The drone is able to be programmed to travel to a set point along the x, y and z axis and is able to adjust the speed of the drone’s flight.</p>
 
-  <h2>Future Plans</h2>
+  <h3>Future Plans</h3>
 
-<p>In future sessions, we planned to further develop this function to ask for user input when determining a flight path and velocity. In the future the goal is to acquire a drone that allows for monitoring of GPS coordinates, the GPS coordinates will be passed to the program to allow for dynamic flight paths depending on destination coordinates. This function will be utilised within the main user interface of our program and provides a vital first step towards the development of our desired program.</p>
+  <p>In future sessions, we planned to further develop this function to ask for user input when determining a flight path and velocity. In the future the goal is to acquire a drone that allows for monitoring of GPS coordinates, the GPS coordinates will be passed to the program to allow for dynamic flight paths depending on destination coordinates. This function will be utilised within the main user interface of our program and provides a vital first step towards the development of our desired program.</p>
 
-<h2>Manual Control/Camera Feed Program Development</h2>
+  <h3>Manual Control/Camera Feed Program Development</h3>
 
-<p>The next function we began to develop was more challenging, being the manual control/live camera feed function. The plan for this was to take keypresses from the user within a while loop and to send controls to the drone depending on which button has been pressed, while simultaneously showing a live camera feed from the drone to aid in navigation. Upon research it was discovered that we had two possible options for getting a user’s keypress, either the ‘pygame’, ‘pynput’ or ‘keyboard’ python libraries (Bhosale, 2021) (PyGame Tutorial: More on Input: Nerd Paradise, 2021). Initially we used the ‘keyboard’ library as it was simple to use but upon testing the ‘pygame’ library we discovered it was easier to implement into a user interface, so we decided to implement the ‘pygame’ library as our method for taking key presses from the user.</p>
+  <p>The next function we began to develop was more challenging, being the manual control/live camera feed function. The plan for this was to take keypresses from the user within a while loop and to send controls to the drone depending on which button has been pressed, while simultaneously showing a live camera feed from the drone to aid in navigation. Upon research it was discovered that we had two possible options for getting a user’s keypress, either the ‘pygame’, ‘pynput’ or ‘keyboard’ python libraries (Bhosale, 2021) (PyGame Tutorial: More on Input: Nerd Paradise, 2021). Initially we used the ‘keyboard’ library as it was simple to use but upon testing the ‘pygame’ library we discovered it was easier to implement into a user interface, so we decided to implement the ‘pygame’ library as our method for taking key presses from the user.</p>
 
-<h2>Manual Control Program Development Issues</h2>
+  <h3>Manual Control Program Development Issues</h3>
 
-<p>During the first attempt at writing code to take user keypresses, we encountered many roadblocks that took significant research to resolve. One issue we encountered was that the program would not close or stop running when clicking the red X at the top of the window. We learnt that the ‘pygame’ window required a statement to check if the user is trying to close the game (3.6: The QUIT Event and pygame.quit() Function, 2021), upon research we concluded that the easiest way to achieve this was through an ‘if’ statement. Implementing this statement solved the exiting error however introduced a new bug where there was a noticeable increase in latency between keypresses. We hypothesised that it may be because when looping through the while loop, the program pauses briefly at the newly added if statement. We changed the location of the close statement, putting it outside of the while loop but this did not solve the issue, next we tried to put the close statement at the end of the while sequence, instead of at the start, strangely this solved our latency issue but introduced an issue where the window will only close after a small delay instead of instantly, this is an improvement from previous functionality as it allows for both fast latency and an operational exit button.
-</p>
+  <p>During the first attempt at writing code to take user keypresses, we encountered many roadblocks that took significant research to resolve. One issue we encountered was that the program would not close or stop running when clicking the red X at the top of the window. We learnt that the ‘pygame’ window required a statement to check if the user is trying to close the game (3.6: The QUIT Event and pygame.quit() Function, 2021), upon research we concluded that the easiest way to achieve this was through an ‘if’ statement. Implementing this statement solved the exiting error however introduced a new bug where there was a noticeable increase in latency between keypresses. We hypothesised that it may be because when looping through the while loop, the program pauses briefly at the newly added if statement. We changed the location of the close statement, putting it outside of the while loop but this did not solve the issue, next we tried to put the close statement at the end of the while sequence, instead of at the start, strangely this solved our latency issue but introduced an issue where the window will only close after a small delay instead of instantly, this is an improvement from previous functionality as it allows for both fast latency and an operational exit button.
+  </p>
 
-<p>At the end of the second development session the keypresses were only programmed to print a value as they were pressed, this was solely used for testing purposes and in later sessions we planned to further develop this to assign flight navigation controls to each keypress and to begin developing a method of displaying the camera feed to the user. This manual flight mode will be able to be triggered mid-flight while travelling a pre-set flight path, this will provide improved safety as it allows our drone pilots to monitor and correct drone flights if necessary. Once all features of the manual control/camera feed function are completed we plan to integrate it into the user interface of our program along with the static flight path function.</p>
+  <p>At the end of the second development session the keypresses were only programmed to print a value as they were pressed, this was solely used for testing purposes and in later sessions we planned to further develop this to assign flight navigation controls to each keypress and to begin developing a method of displaying the camera feed to the user. This manual flight mode will be able to be triggered mid-flight while travelling a pre-set flight path, this will provide improved safety as it allows our drone pilots to monitor and correct drone flights if necessary. Once all features of the manual control/camera feed function are completed we plan to integrate it into the user interface of our program along with the static flight path function.</p>
 
-<h2>Further Code Development</h2>
+  <h3>Further Code Development</h3>
 
-<p>Our next development session was focused around utilising our keypress module to produce a program that controlled the drone with user inputs. This was done by replacing the temporary print statements, inside the keyboard control program, with drone control commands that control the direction, altitude, yaw, and velocity. Surprisingly this worked flawlessly on first try and we decided to assign keystrokes to allow for take-off and landing as well.</p>
-<p>The next task we attempted was to develop the live camera feed functionality. Within the djitellopy library there is a function called get_frame_read() which sends individual frames from the drone camera to the program, this was utilised within the main while loop to allow for constant retrieval of camera frames and OpenCV was used to display the frames as an image. Upon first implementation we noticed that the camera feed window was displaying outside of the main UI window, we decided to leave this for now and complete some testing on our program to solve any bugs before continuing.</p>
+  <p>Our next development session was focused around utilising our keypress module to produce a program that controlled the drone with user inputs. This was done by replacing the temporary print statements, inside the keyboard control program, with drone control commands that control the direction, altitude, yaw, and velocity. Surprisingly this worked flawlessly on first try and we decided to assign keystrokes to allow for take-off and landing as well.</p>
+  <p>The next task we attempted was to develop the live camera feed functionality. Within the djitellopy library there is a function called get_frame_read() which sends individual frames from the drone camera to the program, this was utilised within the main while loop to allow for constant retrieval of camera frames and OpenCV was used to display the frames as an image. Upon first implementation we noticed that the camera feed window was displaying outside of the main UI window, we decided to leave this for now and complete some testing on our program to solve any bugs before continuing.</p>
 
-<h2>Debugging</h2>
+  <h3>Debugging</h3>
 
-<p>We noticed a crash that would occur if a user input the takeoff() command while already in the air, similarly the program would also crash if the drone was told to land while the drone was already on the ground. We solved this issue by using the get_height() function, which allowed us to check if the drone was in the air or on the ground, if the drone was in a state that would cause the program to crash then the command would be ignored by using if-else statements. After some research in the djitellopy library and tweaking of the program we were able to successfully avoid all errors when giving unavailable commands.</p>
+  <p>We noticed a crash that would occur if a user input the takeoff() command while already in the air, similarly the program would also crash if the drone was told to land while the drone was already on the ground. We solved this issue by using the get_height() function, which allowed us to check if the drone was in the air or on the ground, if the drone was in a state that would cause the program to crash then the command would be ignored by using if-else statements. After some research in the djitellopy library and tweaking of the program we were able to successfully avoid all errors when giving unavailable commands.</p>
 
-<h2>Camera Feed Functionality Development</h2>
+  <h3>Camera Feed Functionality Development</h3>
 
-<p>Once we had resolved some main issues with the code, we began to continue work on the camera feed, to get it to display within the main UI window. To do this we took each captured frame and converted it to a pygame surface so that it would be able to be displayed by the pygame window. When attempting to display the surface it became apparent that the camera feed was rotated, inverted and colours were distorted. In order to rotate and flip the image we used the fliplr() and rot90() functions from the numpy library. In order to correct the colours we used the cvtColour() function from the OpenCV library. These changes allowed the image to display correctly, however the image was positioned incorrectly within the window. Window sizes were adjusted to allow the camera to fit comfortably in the UI and then the position of the camera feed was adjusted to display under the controls section of the program. Currently one known bug is that the camera feed pauses when taking off and landing and resumes afterwards, research has been conducted to resolve the issue however we believe it may be a limitation of the djitellopy library. Once all of these adjustments were complete, the manual control program was fully operational and in a state that we were happy with as a prototype.
-</p>
+  <p>Once we had resolved some main issues with the code, we began to continue work on the camera feed, to get it to display within the main UI window. To do this we took each captured frame and converted it to a pygame surface so that it would be able to be displayed by the pygame window. When attempting to display the surface it became apparent that the camera feed was rotated, inverted and colours were distorted. In order to rotate and flip the image we used the fliplr() and rot90() functions from the numpy library. In order to correct the colours we used the cvtColour() function from the OpenCV library. These changes allowed the image to display correctly, however the image was positioned incorrectly within the window. Window sizes were adjusted to allow the camera to fit comfortably in the UI and then the position of the camera feed was adjusted to display under the controls section of the program. Currently one known bug is that the camera feed pauses when taking off and landing and resumes afterwards, research has been conducted to resolve the issue however we believe it may be a limitation of the djitellopy library. Once all of these adjustments were complete, the manual control program was fully operational and in a state that we were happy with as a prototype.
+  </p>
 
-<h2>User Interface Integration</h2>
+  <h3>User Interface Integration</h3>
 
-<p>The next task the team took on was the integration of both manual and automatic drone control programs into a single launcher interface, that allowed the user to switch between manual and automatic control by the click of a button. In order to do this, we used the tkinter python library, which allowed us to create a window with clickable buttons. We were able to assign functions to each button, so the plan was to have one button for automatic and one button for manual control of the drone. A while loop was created to run the launcher and to execute the functions until the user click the other button or closes the launcher. Upon first implementation there were many issues with the code, and it failed to run, many hours were spent attempting to resolve the issue however the problem seemed to fall outside the scope of what we could achieve in the remaining limited time. It was decided to instead implement the automatic control as a feature within the manual control program. This allowed for a simpler implementation and meant that the user only needs one window open to operate the program.
-</p>
+  <p>The next task the team took on was the integration of both manual and automatic drone control programs into a single launcher interface, that allowed the user to switch between manual and automatic control by the click of a button. In order to do this, we used the tkinter python library, which allowed us to create a window with clickable buttons. We were able to assign functions to each button, so the plan was to have one button for automatic and one button for manual control of the drone. A while loop was created to run the launcher and to execute the functions until the user click the other button or closes the launcher. Upon first implementation there were many issues with the code, and it failed to run, many hours were spent attempting to resolve the issue however the problem seemed to fall outside the scope of what we could achieve in the remaining limited time. It was decided to instead implement the automatic control as a feature within the manual control program. This allowed for a simpler implementation and meant that the user only needs one window open to operate the program.
+  </p>
 
-<h2>Testing</h2>
+  <h3>Testing</h3>
 
-<p>Upon completion of the integration of both programs into one UI, we commenced our final testing phase, to ensure all features were functional and that no new bugs had appeared. After testing, it was concluded that the program meets all of our requirements and that we had achieved our initial goals for this timeframe.</p>
-<p>Ongoing research is being conducted to find a more ideal solution to meet our goals and, in the future, we plan to refine the user interface to allow for more user control and a cleaner UI experience.</p>
+  <p>Upon completion of the integration of both programs into one UI, we commenced our final testing phase, to ensure all features were functional and that no new bugs had appeared. After testing, it was concluded that the program meets all of our requirements and that we had achieved our initial goals for this timeframe.</p>
+  <p>Ongoing research is being conducted to find a more ideal solution to meet our goals and, in the future, we plan to refine the user interface to allow for more user control and a cleaner UI experience.</p>
 
-<h2>Conclusion</h2>
+  <h3>Conclusion</h3>
 
-<p>Throughout this project development session, Lachlan primarily focused on writing of the code while Jacob simultaneously conducted vital research and provided design insight to assist in the production of our code. Both Lachlan and Jacob were able to share existing knowledge with each other to allow for quick problem solving and development of ideas.</p>
+  <p>Throughout this project development session, Lachlan primarily focused on writing of the code while Jacob simultaneously conducted vital research and provided design insight to assist in the production of our code. Both Lachlan and Jacob were able to share existing knowledge with each other to allow for quick problem solving and development of ideas.</p>
+
+  <h2>Application and Website Development</h2>
+
+  <p>Our project will be accessed by our application and website to accommodate people with and without the common knowledge of modern-day technology, and our main priority is to give all people the emergency access to our medical drones through a user-friendly app and website. In the app and web design department our focus is to make information about our project available such as, the purpose of our project and the technologies it holds, how it will help everyone in modern day society, what medical equipment and supplies are available, and how we also aim to provide a more time efficient adaption in an emergency.</p>
+  <p>Our website and app department are in early stages of development, our main goal is to have a fully accessible and informative app and website to explain in detail on how to use medical equipment, and medication provided by our drones with a feature like a “summoning” button to activate and deliver our drone by sending the patients, global positioning service(GPS) co-ordinance to it for instantaneous and autonomous delivery of our drones and supplies, to help save lives in an emergency situation. </p>
+  <p>In the first five weeks we aim to have completed a design of our website and app with all current researched content uploaded and adding a summoning button to the home page of our website and app, where its main function is to send GPS coordinates and an activation code to the emergency drone. In the following ten weeks we aim to create a user form to store our client’s information in case of future emergencies, allowing the user to gain instantaneous activation and delivery of our drones through the biometric integrated system, video links from trusted sources explaining the correct use of our equipment and medications supplied by our medical drones, and having all devices to have capability to view our website and containing our pre-installed app on all new devices.</p>
+  <p>Our website and app department will be working closely with the drone software department to assure our internet services work, autonomously and safely alongside each other. It is crucial that our departments work in twine for guaranteed functionality and access to our drones remotely via the drone control centre, and the emergency point of contact by the patient.</p>
+
+  <p>It will require an addition ten weeks to complete our project, if not longer, to assure that our product is safe, reliable, easily accessed and abiding by all privacy laws and legislative regulations in the country via our website and application.</p>
+
+<h3>Application and Website Development Timeline</h3>
+
+  <img src="images/anthonysphotos/Screenshot (86).png" alt="Application and website Development timeline 1" width=90%></img>
+
+
+
+<h1>

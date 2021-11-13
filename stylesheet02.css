@@ -9,6 +9,10 @@ html {
 
 }
 
+img {
+  display: block;
+  margin: 0 auto;
+}
 /*button*/
 button {
   background-color: #56445D;
@@ -31,6 +35,7 @@ button {
   position: absolute;
   top: 0;
   display: flex;
+  margin: 0 auto;
   justify-content: center;
   align-items: center;
   display: none;
@@ -44,6 +49,7 @@ button {
   padding: 15px 20px;
   border: 3px solid black;
   border-radius: 20px;
+  margin: 0 auto;
 }
 
 .ebutton-content h1 {
@@ -172,62 +178,8 @@ nav a:hover::before {
   border-color: #56445D;
 }
 
-#maintitle {
-  text-align: justify;
-  border-top: 5px solid;
-  border-bottom: 5px solid;
-  border-color: #56445D;
-  padding: 20px 10px;
-}
+/*PLANS AND PROGRESS HTML BELOW THIS POINT*/
 
-#maintitle h1 {
-  text-align: center;
-}
-
-#maintitle h2 {
-  text-align: center;
-}
-
-#teamprofile {
-  border-top: 5px solid;
-  border-bottom: 5px solid;
-  border-color: #56445D;
-}
-
-.bradleymain {
-  display: inline-block;
-  text-align: center;
-  border-top: 5px solid;
-  border-bottom: 5px solid;
-  border-color: #56445D;
-  padding: 20px 10px;
-}
-
-.bradleymain img {
-  float: left;
-}
-
-.bradleymain p {
-  padding: 20px 10px;
-  display: flex;
-  text-align: justify;
-}
-
-.bradleymain h3 {
-  text-align: center;
-}
-
-.bradleymain li {
-  width: 80%;
-  text-align: left;
-  position: relative;
-  left: 20px;
-
-}
-
-
-/*Index html css Ends here*/
-
-#scopemain h1 {
-  overflow: auto;
+#test {
+  list-style: none;
 }
