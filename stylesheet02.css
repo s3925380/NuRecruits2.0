@@ -180,58 +180,8 @@ nav a:hover::before {
 
 /*PLANS AND PROGRESS HTML BELOW THIS POINT*/
 
-<<<<<<< HEAD
 #test {
   list-style: none;
-=======
-#maintitle h2 {
-  text-align: center;
-}
-
-#teamprofile {
-  border-top: 5px solid;
-  border-bottom: 5px solid;
-  border-color: #56445D;
-}
-
-.bradleymain {
-  display: inline-block;
-  text-align: center;
-  border-top: 5px solid;
-  border-bottom: 5px solid;
-  border-color: #56445D;
-  padding: 20px 10px;
-}
-
-.bradleymain img {
-  float: left;
-}
-
-.bradleymain p {
-  padding: 20px 10px;
-  display: flex;
-  text-align: justify;
-}
-
-.bradleymain h3 {
-  text-align: center;
-}
-
-.bradleymain li {
-  width: 80%;
-  text-align: left;
-  position: relative;
-  left: 20px;
-
-}
-
-
-
-/*Index html css Ends here*/
-
-#scopemain h1 {
-  overflow: auto;
->>>>>>> 921e42c1e64d880dbbb07466b4ec5766a237759b
 }
 
 
