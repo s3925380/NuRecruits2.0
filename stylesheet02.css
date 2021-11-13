@@ -226,8 +226,226 @@ nav a:hover::before {
 }
 
 
+
 /*Index html css Ends here*/
 
 #scopemain h1 {
   overflow: auto;
+}
+
+
+/*-----------------------lachlans test CSS starts here------------------------*/
+
+.centerimg {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 15%;
+}
+
+/* Navbar container */
+.navbar {
+  background-color: #333;
+  font-family: "Russo One", sans-serif;
+  display: inline-block;
+  margin-left: 20px;
+  padding: 5px;
+  width: 849px;
+  position: relative;
+  bottom: 80px;
+  left: 90px;
+
+  border-radius: 25px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: #91F291;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+/* The dropdown container */
+.dropdown {
+  border-radius: 20px;
+  float: left;
+  overflow: hidden;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+  font-size: 16px;
+  border: none;
+  background-color: #373F51;
+  color: #91F291;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a grey background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #808080;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content-project {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  max-width: 167px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px;
+
+
+
+}
+
+.dropdown-content-skills {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 123px;
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px;
+}
+
+.dropdown-content-a2 {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  max-width: 135px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 20px;
+}
+/* Links inside the dropdown */
+.dropdown-content-project a {
+  float: none;
+  color: #91F291;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content-skills a {
+  float: none;
+  color: #91F291;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content-a2 a {
+  float: none;
+  color: #91F291;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  margin: 5px;
+  border-radius: 20px;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content-project a:hover {
+  background-color: #808080;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content-skills a:hover {
+  background-color: #808080;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content-a2 a:hover {
+  background-color: #808080;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content-project {
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content-skills {
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content-a2 {
+  display: block;
+}
+
+
+#contentmain {
+  font-family: Space Grotesk, sans-serif;
+  font-size: 20px;
+  width: 1060px;
+  text-align: Justify;
+  color: white;
+  padding: 10px;
+  Background-color: #373F51;
+  border-color: #56445D;
+  border-width: 10px;
+  border-style: solid;
+}
+
+
+#contentmain h1 {
+  text-decoration: underline;
+  text-underline-position: under;
+  font-size: 50px;
+  width:800px;
+  color: #91F291;
+  margin:0 auto;
+  text-align: center;
+  font-family: "Russo One", sans-serif;
+}
+
+#contentmain h2 {
+  text-decoration: underline;
+  text-underline-position: under;
+  width:500px;
+  color: #91F291;
+  margin:0 auto;
+  text-align: center;
+
+}
+
+#contentmain h3 {
+  text-decoration: underline;
+  text-underline-position: under;
+  padding-top: 10px;
+  width:500px;
+  color: #91F291;
+  margin:0 auto;
+  text-align: center;
+
+}
+
+
+#contentmain img {
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
 }
