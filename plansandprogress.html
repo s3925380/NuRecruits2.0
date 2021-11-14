@@ -6,183 +6,95 @@
   <meta charset="UTF-8">
   <title>nu recruITs</title>
   <link rel="stylesheet" href="stylesheet02.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide|Sofia|Trirong|Russo One|Space Grotesk">
   <script defer src="button.js"></script>
 </head>
 
-<main>
-
 <body>
-
-    <div id="wholepage">
+  <div id="wholepage">
   <header>
     <div class="container">
-      <a href="index.html">
+
+      <a href="index.html"><img src="images/logo_2.png" alt="group logo"  height="200px" class = "logo"></a>
+
       <button><a href="#" id="buttonemerg" class="buttonemerg"> !!! SEND A DRONE NOW !!!</A></button>
-      <img src="images/logo_2.png" alt="group logo" class="logo" height="200px">
-      </a>
-       <nav>
-         <ul>
-           <li><a href="index.html">Team</a></li>
-           <li><a href="idealjobs.html">Jobs</a></li>
-           <li><a href="Tools.html">Tools</a></li>
-           <li><a href="industrydata.html">Industry</a></li>
-           <li><a href="itwork.html">IT Work</a></li>
-           <li><a href="ittechnologies.html">Technologies</a></li>
-           <li><a href="projectideas.html">IT Project</a></li>
-           <li><a href="contactus.html">Contact Us</a></li>
-         </ul>
-       </nav>
+
+      <div class="navbar">
+        <a href="index.html">Team Profile</a>
+        <a href="Tools.html">Tools</a>
+        <div class="dropdown">
+          <p class="dropbtn">nuRecruITs Project</p>
+          <div class="dropdown-content-project">
+            <a href="overview.html">Overview</a>
+            <a href="aim.html">Aim</a>
+            <a href="plansandprogress.html">Plans & Progress</a>
+            <a href="roles.html">Roles</a>
+            <a href="scopeandlimits.html">Scope & Limits</a>
+            <a href="toolsandtech.html">Tools & Technologies</a>
+            <a href="testing.html">Testing</a>
+            <a href="timeframe.html">Timeframe</a>
+            <a href="risks.html">Risks</a>
+            <a href="groupprocessandcomms.html">Processes & Comms</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <p class="dropbtn">Skills & Jobs</p>
+          <div class="dropdown-content-skills">
+            <a href="jobad1.html">Information Security Analyst</a>
+            <a href="jobad2.html">IT Program Manager</a>
+            <a href="jobad3.html">Drone Electrical Engineer</a>
+            <a href="jobad4.html">Lead Software Engineer</a>
+          </div>
+        </div>
+        <a href="groupreflection.html">Group Reflection</a>
+        <div class="dropdown">
+          <p class="dropbtn">Assignment 2</p>
+          <div class="dropdown-content-a2">
+            <a href="https://s3925380.github.io/nurecruITs/index.html">Team Profile</a>
+            <a href="https://s3925380.github.io/nurecruITs/idealjobs.html">Ideal Jobs</a>
+            <a href="https://s3925380.github.io/nurecruITs/Tools.html">Tools</a>
+            <a href="https://s3925380.github.io/nurecruITs/industrydata.html">Industry Data</a>
+            <a href="https://s3925380.github.io/nurecruITs/itwork.html">Interview</a>
+            <a href="https://s3925380.github.io/nurecruITs/ittechnologies.html">IT Tech</a>
+            <a href="https://s3925380.github.io/nurecruITs/projectideas.html">IT Project</a>
+          </div>
+        </div>
+      </div>
      </div>
   </header>
 
-
-    <div class="ebutton">
-      <div class="ebutton-content">
-          <div class ="closebutton">&times</div>
-        <h2><p> An Emergency drone is on the way.</p><p>Please keep a close eye for any change in symptoms.</p></h2>
-
-
-      </div>
+  <div class="ebutton">
+    <div class="ebutton-content">
+        <div class ="closebutton">&times</div>
+      <h2><p> An Emergency drone is on the way.</p><p>Please keep a close eye for any change in symptoms.</p></h2>
     </div>
+  </div>
+<div id="contentmain">
+    <h1>Plans & Progress</h1>
+    <br>
 
-  <h1>Plans and Progress</h1>
+    <a href="dronedev.html">Drone Program Development</a>
+    <a href="dronedev.html"><img src="images/ittech/cybercrimepicture.jpg" alt=""></a>
 
-  <h2>Drone Program Development</h2>
+    <a href="appdev.html">App & Website Development</a>
+    <a href="appdev.html"><img src="images/ittech/autocarspicture.jpg" alt=""></a>
 
-  <p>Our team has decided to write a program that will act as a control centre for our drones, allowing drone pilots to monitor and navigate our drones as they fly to patients. This control centre should allow the user to set static flight paths for a drone to fly and should also allow for flight control via user input. Whenever the drone pilot at the control centre takes manual control of the drone, they will need to be able to see a video feed from the drone to ensure a correct flight path.  </p>
+    <a href="marketingdev.html">Marketing Campaign Development</a>
+    <a href="marketingdev.html"><img src="images/ittech/robotpicture.jpg" alt=""></a>
 
-  <h3>Existing Skills</h3>
-
-  <p>The programming team in our group consists of Lachlan and Jacob. Each team member has been assigned roles focused around conducting the research and producing a prototype program to demonstrate our ideas. Knowledge of programming in python is limited between Lachlan and Jacob, with Lachlan having less than 12 months experience and Jacob having no experience in python. Because of this limited knowledge, the team planned to conduct research and share whatever python knowledge they have with each other in order to get the best understanding possible in the limited time available.</p>
-
-  <h3>Research</h3>
-
-  <p>The first research conducted by the programming team was directed towards determining which hardware and software was suitable for the task at hand. Because of Lachlan’s existing python knowledge, the team decided to research if there are any programmable drones compatible with the programming language. While the team plans to develop their drones in-house in the future, currently it is not possible due to financial limitations and time constraints, meaning that 3rd party drone hardware will be required by the team in order to develop a prototype.</p>
-
-  <p>After conducting research about which drone hardware to use, it was decided that the ‘DJI Tello drone’ (Tello, 2021) will be used to develop our prototype due to its extremely cheap price and ability to be programmed using python. The team believed this would be a worthy investment as it will continue to provide highly valuable testing results even beyond the timeframe of the project.</p>
-
-  <p>A 3rd party python library named “djitellopy” is freely available and was chosen to be used to construct code that meets our project requirements (damiafuentes/DJITelloPy, 2021). When distributing the code that we develop using the djitellopy library, we must include an MIT License and copyright notice, both of which are supplied on the DJITelloPy GitHub page (DJITelloPy/LICENSE.txt at master  damiafuentes/DJITelloPy, 2021). Research of the djitellopy library and its contents was conducted, to establish a clear understanding of what functions were at our disposal to meet our programs requirements.</p>
-
-  <p>During our research we discovered there are many online tutorials that provide techniques to program drones (Develop Path Planning GUI for DJI Tello, 2021) (DJI Tello - Getting Started with Software Development, 2021) (Drone Programming With Python Course, 2021) (Easy Programming of Tello Drone | Python OpenCV Object Tracking, 2021), we attempted to utilise these to take our first steps at writing code, however we underestimated how difficult this would be quickly realised that a significant number of modifications and troubleshooting would be necessary to achieve our goals.</p>
-
-  <h3>Initial Development Issues</h3>
-
-  <p>The first problem was encountered when attempting to initiate connection to the drone. We attempted to create a drone object of the ‘Tello’ class and then connect to the drone via the network using the .connect() method. This produced an error which was determined to be because of an incompatible version of python. The existing version of python was the most recent release, python 3.10.0, however due to OpenCV instability, python version 3.7.6 (Download Python, 2021) was installed. Once this was installed there was still communication errors between the drone and the computer running the code. These errors were determined to be due to the firewall blocking communication to the drone, this was fixed by temporarily disabling the firewall during testing however an exemption will be added to allow for communication past an active firewall.</p>
-
-  <h3>Design Descisions</h3>
-
-  <p>Once all connection issues were out of the way, the team began designing how the program would be structured. It was decided that the program would feature a user interface with buttons that execute different functions within the program. The functions that these buttons execute will be a manual flight control function with a live camera feed from the drone and a function that allows for input of set flight paths. The user should be able to switch between these two functions at will. The program must feature an emergency abort feature that disengages the drone and ends the program.</p>
-
-  <h3>Automatice Control Program Development</h3>
-
-  <p>The first function the team began developing was the static flight path function. There were many errors during development, due to extremely limited knowledge of the djitellopy library, however by utilising the djitellopy SDK 1.3.0.0 (Tello SDK 1.3.0.0, 2021), djitellopy python library and skills developed from various online guides and tutorials, the team managed to develop code that successfully controls a drone by entering set directions for the drone to travel (see appendix). The drone is able to be programmed to travel to a set point along the x, y and z axis and is able to adjust the speed of the drone’s flight.</p>
-
-  <h3>Future Plans</h3>
-
-  <p>In future sessions, we planned to further develop this function to ask for user input when determining a flight path and velocity. In the future the goal is to acquire a drone that allows for monitoring of GPS coordinates, the GPS coordinates will be passed to the program to allow for dynamic flight paths depending on destination coordinates. This function will be utilised within the main user interface of our program and provides a vital first step towards the development of our desired program.</p>
-
-  <h3>Manual Control/Camera Feed Program Development</h3>
-
-  <p>The next function we began to develop was more challenging, being the manual control/live camera feed function. The plan for this was to take keypresses from the user within a while loop and to send controls to the drone depending on which button has been pressed, while simultaneously showing a live camera feed from the drone to aid in navigation. Upon research it was discovered that we had two possible options for getting a user’s keypress, either the ‘pygame’, ‘pynput’ or ‘keyboard’ python libraries (Bhosale, 2021) (PyGame Tutorial: More on Input: Nerd Paradise, 2021). Initially we used the ‘keyboard’ library as it was simple to use but upon testing the ‘pygame’ library we discovered it was easier to implement into a user interface, so we decided to implement the ‘pygame’ library as our method for taking key presses from the user.</p>
-
-  <h3>Manual Control Program Development Issues</h3>
-
-  <p>During the first attempt at writing code to take user keypresses, we encountered many roadblocks that took significant research to resolve. One issue we encountered was that the program would not close or stop running when clicking the red X at the top of the window. We learnt that the ‘pygame’ window required a statement to check if the user is trying to close the game (3.6: The QUIT Event and pygame.quit() Function, 2021), upon research we concluded that the easiest way to achieve this was through an ‘if’ statement. Implementing this statement solved the exiting error however introduced a new bug where there was a noticeable increase in latency between keypresses. We hypothesised that it may be because when looping through the while loop, the program pauses briefly at the newly added if statement. We changed the location of the close statement, putting it outside of the while loop but this did not solve the issue, next we tried to put the close statement at the end of the while sequence, instead of at the start, strangely this solved our latency issue but introduced an issue where the window will only close after a small delay instead of instantly, this is an improvement from previous functionality as it allows for both fast latency and an operational exit button.
-  </p>
-
-  <p>At the end of the second development session the keypresses were only programmed to print a value as they were pressed, this was solely used for testing purposes and in later sessions we planned to further develop this to assign flight navigation controls to each keypress and to begin developing a method of displaying the camera feed to the user. This manual flight mode will be able to be triggered mid-flight while travelling a pre-set flight path, this will provide improved safety as it allows our drone pilots to monitor and correct drone flights if necessary. Once all features of the manual control/camera feed function are completed we plan to integrate it into the user interface of our program along with the static flight path function.</p>
-
-  <h3>Further Code Development</h3>
-
-  <p>Our next development session was focused around utilising our keypress module to produce a program that controlled the drone with user inputs. This was done by replacing the temporary print statements, inside the keyboard control program, with drone control commands that control the direction, altitude, yaw, and velocity. Surprisingly this worked flawlessly on first try and we decided to assign keystrokes to allow for take-off and landing as well.</p>
-  <p>The next task we attempted was to develop the live camera feed functionality. Within the djitellopy library there is a function called get_frame_read() which sends individual frames from the drone camera to the program, this was utilised within the main while loop to allow for constant retrieval of camera frames and OpenCV was used to display the frames as an image. Upon first implementation we noticed that the camera feed window was displaying outside of the main UI window, we decided to leave this for now and complete some testing on our program to solve any bugs before continuing.</p>
-
-  <h3>Debugging</h3>
-
-  <p>We noticed a crash that would occur if a user input the takeoff() command while already in the air, similarly the program would also crash if the drone was told to land while the drone was already on the ground. We solved this issue by using the get_height() function, which allowed us to check if the drone was in the air or on the ground, if the drone was in a state that would cause the program to crash then the command would be ignored by using if-else statements. After some research in the djitellopy library and tweaking of the program we were able to successfully avoid all errors when giving unavailable commands.</p>
-
-  <h3>Camera Feed Functionality Development</h3>
-
-  <p>Once we had resolved some main issues with the code, we began to continue work on the camera feed, to get it to display within the main UI window. To do this we took each captured frame and converted it to a pygame surface so that it would be able to be displayed by the pygame window. When attempting to display the surface it became apparent that the camera feed was rotated, inverted and colours were distorted. In order to rotate and flip the image we used the fliplr() and rot90() functions from the numpy library. In order to correct the colours we used the cvtColour() function from the OpenCV library. These changes allowed the image to display correctly, however the image was positioned incorrectly within the window. Window sizes were adjusted to allow the camera to fit comfortably in the UI and then the position of the camera feed was adjusted to display under the controls section of the program. Currently one known bug is that the camera feed pauses when taking off and landing and resumes afterwards, research has been conducted to resolve the issue however we believe it may be a limitation of the djitellopy library. Once all of these adjustments were complete, the manual control program was fully operational and in a state that we were happy with as a prototype.
-  </p>
-
-  <h3>User Interface Integration</h3>
-
-  <p>The next task the team took on was the integration of both manual and automatic drone control programs into a single launcher interface, that allowed the user to switch between manual and automatic control by the click of a button. In order to do this, we used the tkinter python library, which allowed us to create a window with clickable buttons. We were able to assign functions to each button, so the plan was to have one button for automatic and one button for manual control of the drone. A while loop was created to run the launcher and to execute the functions until the user click the other button or closes the launcher. Upon first implementation there were many issues with the code, and it failed to run, many hours were spent attempting to resolve the issue however the problem seemed to fall outside the scope of what we could achieve in the remaining limited time. It was decided to instead implement the automatic control as a feature within the manual control program. This allowed for a simpler implementation and meant that the user only needs one window open to operate the program.
-  </p>
-
-  <h3>Testing</h3>
-
-  <p>Upon completion of the integration of both programs into one UI, we commenced our final testing phase, to ensure all features were functional and that no new bugs had appeared. After testing, it was concluded that the program meets all of our requirements and that we had achieved our initial goals for this timeframe.</p>
-  <p>Ongoing research is being conducted to find a more ideal solution to meet our goals and, in the future, we plan to refine the user interface to allow for more user control and a cleaner UI experience.</p>
-
-  <h3>Conclusion</h3>
-
-  <p>Throughout this project development session, Lachlan primarily focused on writing of the code while Jacob simultaneously conducted vital research and provided design insight to assist in the production of our code. Both Lachlan and Jacob were able to share existing knowledge with each other to allow for quick problem solving and development of ideas.</p>
-
-  <h2>Application and Website Development</h2>
-
-  <p>Our project will be accessed by our application and website to accommodate people with and without the common knowledge of modern-day technology, and our main priority is to give all people the emergency access to our medical drones through a user-friendly app and website. In the app and web design department our focus is to make information about our project available such as, the purpose of our project and the technologies it holds, how it will help everyone in modern day society, what medical equipment and supplies are available, and how we also aim to provide a more time efficient adaption in an emergency.</p>
-  <p>Our website and app department are in early stages of development, our main goal is to have a fully accessible and informative app and website to explain in detail on how to use medical equipment, and medication provided by our drones with a feature like a “summoning” button to activate and deliver our drone by sending the patients, global positioning service(GPS) co-ordinance to it for instantaneous and autonomous delivery of our drones and supplies, to help save lives in an emergency situation. </p>
-  <p>In the first five weeks we aim to have completed a design of our website and app with all current researched content uploaded and adding a summoning button to the home page of our website and app, where its main function is to send GPS coordinates and an activation code to the emergency drone. In the following ten weeks we aim to create a user form to store our client’s information in case of future emergencies, allowing the user to gain instantaneous activation and delivery of our drones through the biometric integrated system, video links from trusted sources explaining the correct use of our equipment and medications supplied by our medical drones, and having all devices to have capability to view our website and containing our pre-installed app on all new devices.</p>
-  <p>Our website and app department will be working closely with the drone software department to assure our internet services work, autonomously and safely alongside each other. It is crucial that our departments work in twine for guaranteed functionality and access to our drones remotely via the drone control centre, and the emergency point of contact by the patient.</p>
-
-  <p>It will require an addition ten weeks to complete our project, if not longer, to assure that our product is safe, reliable, easily accessed and abiding by all privacy laws and legislative regulations in the country via our website and application.</p>
-
-<h3>Application and Website Development Timeline</h3>
-
-  <img src="images/anthonysphotos/Screenshot (86).png" alt="Application and website Development timeline 1" width=90%></img>
-
-
-<h2>Marketing Campaign Development</h2>
-
-<h3>Marketing Video</h3>
-
-<p>A crucial aspect to this project is the sourcing of funding and legislative approval. Without the backing of Government, no drones will take flight, no medical supplies will be delivered, and no lives will be saved. Our plan to tackle this decisive element is the production of a concise but impactful video that will persuade the necessary stakeholders to support the project.</p>
-
-<p>This video will consist of five elements:</p>
-
-  <ol>
-      <li>An interview with the CEO of <nu>recruITs, outlining the aim and motivation of the project. This will demonstrate the passion and capability of the team and inspire confidence amongst investors that we will be able to deliver on the technical and engineering fundamentals behind our vision.</li>
-
-      <li>A cartoon animation that outlines the base case study of how drones are faster than ambulances at arriving at a person's home in the event of a cardiac arrest, and how this difference in time is the difference between life and death. The animation will be content rich, allowing the viewer to absorb the vital statistics behind the justification of the project. The simplistic visuals will clarify the message for easy comprehension.</li>
-
-      <li>One or two hypothetical news reports that demonstrate real world scenarios and highlight the advantages of the project. This will be a highly impactful segment, taking the project from the theoretical to the real world. When a stakeholder can visualise the benefit for the community, they are more likely to offer support.</li>
-
-      <li>An update of development progress so far, featuring footage and photographs of drone flights, programming, and the mobile application. This will demonstrate our competence and innovation across the full spectrum of the project's requirements and convince stakeholders that we have the drive and ability to see this project to successful completion.</li>
-
-      <li>Introduction to the team. Each member will be quickly introduced alongside their role within the project. This will establish a relationship between the team and the potential investors and give them confidence in the diversity of skills, interests, and personalities within the team.</li>
-  </ol>
-
-<p>This plan took us some time to come up with, as we realised the importance of the video being short and powerful. We had to scrap other ideas of content to include that would take away from the main aim of the video to convince investors of the legitimacy and impact of the project in order to induce financial support.</p>
-
-<p>One of the great challenges with this video will be keeping all five elements within the timeframe allotted to them. This will require detailed scripting so that every word counts, along with careful rehearsal and video editing to ensure each second of video makes maximum impact.</p>
-
-<p>We are unfamiliar with animation processes and technology but have a vision for the success of the final outcome of this crucial aspect to the video. We are confident we will be able to source the required software, and with concerted effort will be able to produce content to the professional standard that we expect of ourselves.</p>
-
-<p>After the planning meeting, we had great success creating an animation using the beginner coding platform Scratch from MIT. The end result is exactly what we hoped for and perfectly demonstrates the key benefit of this technology over the current technology. We believe that this section of the marketing video will be particularly impactful on any visual learners in the audience. It also balances the video well, offering an alternative to the more serious and voice-over intensive sections. We were surprised at how easily this section was able to be accomplished. Had we chosen to use hand-drawn illustrations in an animation this would have been far more labour intensive. Using scratch was efficient and effective, and complemented our burgeoning programming skills by consolidating the concepts about programming logic and reasoning.</p>
-
-<p>Sound effects were added to the animation using iMovie, including an upbeat corporate backing track, ambient traffic and car sounds, the drone sound, and the ambulance siren. These greatly enhanced the impact of the animation, and will ensure that it is an effective and unique component of the marketing video.</p>
-
-<p>The script for the news report was written soon after the planning meeting occurred. Some research into news report writing was conducted to help influence the wording. It was based upon a scenario that had previously been written about the potential uses of this technology. This script now needs plenty of rehearsal to ensure speedy and accurate delivery, and then filming and editing can occur.</p>
-
-
-
-<h3>Researching Government Contracts</h3>
-
-<p>As part of the marketing team, it is our job to research and investigate ways in which <nu>recruITs can market our product and what the best way is for us to do so in a start up situation. We started off by investigating government contracts and how they are offered, before moving onto a more realistic approach in a go-fund me.</p>
-
-<p>To get a government contract you need to tailor what you are doing to something the government is already offering as a contract. You then apply for that contract and if you get it, then you are free to go ahead. You can not simply apply to get a contract tailored to you, or ask the government to fund you. The easiest way to get funded, is to pitch your idea to big pharmaceutical companies who already have access to the medical equipment we need, such as epi pens, defibrillator and first aid kits. Another simpler way is to create a go-fund-me under a non-for-profit banner, with the aim to start for low funding and increase it over time with the end goal still being that a government agency will contract us to continue to develop and produce our product but under a different banner suited to their needs. The perks of a go-fund-me is we are not restricted by a government agency, however the perks the government brings can help us “skirt” some laws that they have place. If we get funded by a pharmaceutical company nothing is stopping them from taking over and producing our product by themselves.</p>
-
-<p>Brewdog is company that brews beer and sells it on a international scale. They receive crowd funding. However there pitch is that they will stay independent and not be brought out by larger companies. This is something that equates to the average person. Brew Dog would give people who help crowd fund there project a $100 stake in the company.  Crowd funders do get a stake in the business however they do have a say in how the business operates and instead receive perks such as invites to their yearly AGM’s, Free beers on your birthday and discounts when buying products from the brewdog shop. You have zero voting rights its more like you share in the company is symbolic. The crowd funders love this idea and embrace it, because of this, Brewdog see’s these people as free advertising, embraces them and welcomes them into the “Punk” family.</p>
-
-<p>In summary the best way for <nurecruIT’s> to get going would be to create a go-fund me. By doing a go-fund me as a non-for profit company we are then able to develop our product in our own time with no set deadlines. In saying this there will need to be dead lines available for our crowd funding to continue, so the people investing money will have something to see what they built. A way to get the funders involved in the idea would be to keep them update about every time our drones helped save a life. Every time we save a life, means through there help we are able to prolong and save human lives. This means they helped save a life and we should celebrate this. Another way to get the community involved would be allowing them to use our code on their drones and submit any feedback they have. Give them beta accesses to our apps and websites making them the first people who can help pioneer the change we are trying to make.</p>
 
 
 </div>
 
+<div id="jobsfooter">
+<footer>
+  <a href="contactus.html">Contact Us</a>
+  <p><strong>nuRecruits:</strong> This Webpage is made for educational purposes.</p>
+</footer>
+</div>
+
+</div>
+
+
 </body>
-
-</main>
-
 </html>
