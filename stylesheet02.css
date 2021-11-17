@@ -27,6 +27,7 @@ h1 {
   margin:0 auto;
   text-align: center;
   font-family: "Russo One", sans-serif;
+  text-shadow: 3px 3px 3px #07101c;
 }
 
 
@@ -37,7 +38,7 @@ h2 {
     color: #16c2d5;
     margin:0 auto;
     text-align: center;
-
+    text-shadow: 3px 3px 3px #07101c;
   }
 
 
@@ -48,6 +49,7 @@ h3 {
   color: #16c2d5;
   margin:0 auto;
   text-align: center;
+  text-shadow: 3px 3px 3px #07101c;
 
 }
 
@@ -125,6 +127,7 @@ button {
 a {
   color: #16c2d5;
   text-decoration: none;
+  text-shadow: 3px 3px 3px #07101c;
 }
 
 a:hover {
@@ -272,6 +275,7 @@ header::after{
   position: relative;
   bottom: 80px;
   left: 90px;
+  text-shadow: 3px 3px 3px #07101c;
 
   border-radius: 25px;
 
@@ -288,6 +292,7 @@ header::after{
   padding: 14px 16px;
   text-decoration: none;
   border-radius: 20px;
+  text-shadow: 3px 3px 3px #07101c;
 }
 
 /* The dropdown container */
@@ -313,7 +318,7 @@ header::after{
 /* Add a grey background color to navbar links on hover */
 .navbar a:hover, .dropdown:hover .dropbtn {
   background-color: #808080;
-  color: #224f8a;
+  color: #a5b9d4;
 }
 
 /* Dropdown content (hidden by default) */
