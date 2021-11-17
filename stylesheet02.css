@@ -16,7 +16,7 @@ img {
 /*button*/
 button {
   background-color: #333;
-  border-color: #56445D;
+  border-color: #16c2d5;
   border-radius: 20px;
   padding: 10px 20px;
   font-family: "Russo One", sans-serif;
@@ -67,7 +67,7 @@ button {
   border-bottom: 3px solid black;
   font-size: 2rem;
   font-weight: bold;
-  color: red;
+  color: #d10016;
   text-align: center;
 }
 
@@ -80,18 +80,18 @@ button {
 
 /*Button css ends here, index.html Starts below*/
 a {
-  color: #91F291;
+  color: #00f06e;
   text-decoration: none;
 }
 
 a:hover {
-  color: #75DDDD;
+  color: #16c2d5;
 }
 
 a:before {
   content: '';
   display: block;
-  background-color: #91F291;
+  background-color: #00f06e;
 }
 
 .container {
@@ -104,7 +104,7 @@ header {
   width: 1080px;
 
   text-align: center;
-  border-color: #56445D;
+  border-color: #16c2d5;
   border-width: 10px;
   border-style: solid;
   background: #373F51;
@@ -144,21 +144,21 @@ nav li {
 }
 
 nav a{
-  color: #91F291;
+  color: #00f06e;
   text-decoration: none;
   text-transform: uppercase;
   Font-size: 14px;
 }
 
 nav a:hover {
-  color: #75DDDD
+  color: #16c2d5
 }
 
 nav a::before {
   content: '';
   display: block;
   height: 5px;
-  background-color: #91F291;
+  background-color: #00f06e;
 
   position: absolute;
   top: 0;
@@ -173,11 +173,11 @@ nav a:hover::before {
 
 .content-body {
   text-align: center;
-  color: orange;
+  color: white;
   width: 100%;
   background-color: #373F51;
   border: 10px solid;
-  border-color: #56445D;
+  border-color: #16c2d5;
 }
 
 /*PLANS AND PROGRESS HTML BELOW THIS POINT*/
@@ -193,7 +193,7 @@ nav a:hover::before {
 #teamprofile {
   border-top: 5px solid;
   border-bottom: 5px solid;
-  border-color: #56445D;
+  border-color: #16c2d5;
 }
 
 .bradleymain {
@@ -201,7 +201,7 @@ nav a:hover::before {
   text-align: center;
   border-top: 5px solid;
   border-bottom: 5px solid;
-  border-color: #56445D;
+  border-color: #16c2d5;
   padding: 20px 10px;
 }
 
@@ -265,7 +265,7 @@ nav a:hover::before {
 .navbar a {
   float: left;
   font-size: 16px;
-  color: #91F291;
+  color: #00f06e;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -285,7 +285,7 @@ nav a:hover::before {
   font-size: 16px;
   border: none;
   background-color: #373F51;
-  color: #91F291;
+  color: #00f06e;
   padding: 14px 16px;
   background-color: inherit;
   font-family: inherit; /* Important for vertical align on mobile phones */
@@ -334,7 +334,7 @@ nav a:hover::before {
 /* Links inside the dropdown */
 .dropdown-content-project a {
   float: none;
-  color: #91F291;
+  color: #00f06e;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -346,7 +346,7 @@ nav a:hover::before {
 /* Links inside the dropdown */
 .dropdown-content-skills a {
   float: none;
-  color: #91F291;
+  color: #00f06e;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -358,7 +358,7 @@ nav a:hover::before {
 /* Links inside the dropdown */
 .dropdown-content-a2 a {
   float: none;
-  color: #91F291;
+  color: #00f06e;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -406,7 +406,7 @@ nav a:hover::before {
   color: white;
   padding: 10px;
   Background-color: #373F51;
-  border-color: #56445D;
+  border-color: #16c2d5;
   border-width: 10px;
   border-style: solid;
 }
@@ -416,7 +416,7 @@ nav a:hover::before {
 
   font-size: 50px;
   width:800px;
-  color: #91F291;
+  color: #00f06e;
   margin:0 auto;
   text-align: center;
   font-family: "Russo One", sans-serif;
@@ -425,7 +425,7 @@ nav a:hover::before {
 #contentmain h2 {
 
   width:500px;
-  color: #91F291;
+  color: #00f06e;
   margin:0 auto;
   text-align: center;
 
@@ -435,7 +435,7 @@ nav a:hover::before {
 
   padding-top: 10px;
   width:500px;
-  color: #91F291;
+  color: #00f06e;
   margin:0 auto;
   text-align: center;
 
