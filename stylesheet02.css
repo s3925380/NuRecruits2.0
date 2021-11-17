@@ -5,7 +5,7 @@ html {
 #wholepage {
   width: 1080px;
   margin: 0 auto;
-  color:white;
+  overflow:auto;
 
 }
 
@@ -101,7 +101,7 @@ a:before {
 
 
 header {
-  width: 1080px;
+  width: 98.5%;
 
   text-align: center;
   border-color: #16c2d5;
@@ -174,12 +174,21 @@ nav a:hover::before {
 .content-body {
   text-align: center;
   color: white;
-  width: 100%;
+  width: 98.5%;
   background-color: #373F51;
   border: 10px solid;
   border-color: #16c2d5;
 }
 
+h4 {
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
+}
 /*PLANS AND PROGRESS HTML BELOW THIS POINT*/
 
 #test {
@@ -226,6 +235,8 @@ nav a:hover::before {
   left: 20px;
 
 }
+
+
 
 
 
@@ -456,4 +467,16 @@ nav a:hover::before {
   margin-left: auto;
   margin-right: auto;
   width: 15%;
+}
+
+/*footer css starts below*/
+#footermain {
+    width: 98.5%;
+    color: white;
+    text-align: center;
+    border-color: #16c2d5;
+    border-width: 10px;
+    border-style: solid;
+    background: #373F51;
+    max-height: 220px;
 }
