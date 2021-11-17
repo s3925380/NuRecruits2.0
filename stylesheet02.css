@@ -32,6 +32,7 @@ h1 {
 
 
 h2 {
+    font-size: 30px;
     width:500px;
     color: #16c2d5;
     margin:0 auto;
@@ -67,7 +68,7 @@ button {
 
   position: relative;
   top: 60px;
-  left: 220px;
+  left: 125px;
   margin: 0 auto;
 
 }
@@ -165,7 +166,14 @@ header::after{
   padding: 10px;
   position: relative;
   left: 210px;
+
 }
+.logo2{
+  float:left;
+  padding: 10px;
+  position: relative;
+  top: 10px;
+  }
 
 
 .content-body {
@@ -222,10 +230,6 @@ header::after{
   padding: 20px 10px;
   display: flex;
   text-align: justify;
-}
-
-.profilemain h3 {
-  text-align: center;
 }
 
 .profilemain li {
@@ -523,4 +527,10 @@ header::after{
     border-top: 5px;
 
     font-family: Space Grotesk, sans-serif;
+}
+
+#footermain a {
+  font-size: 25px;
+  font-weight: bold;
+
 }
