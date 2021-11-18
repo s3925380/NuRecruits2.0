@@ -70,7 +70,7 @@ button {
 
   position: relative;
   top: 60px;
-  left: 125px;
+  left: 108px;
   margin: 0 auto;
 
 }
@@ -79,13 +79,15 @@ button {
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, .5);
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 0px;
   display: flex;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   display: none;
+  left: 0px;
+  z-index: 100;
 
 }
 
@@ -97,6 +99,9 @@ button {
   border: 3px solid black;
   border-radius: 20px;
   margin: 0 auto;
+  position: relative;
+
+
 }
 
 .ebutton-content h1 {
@@ -106,6 +111,8 @@ button {
   text-align: center;
   position: relative;
   bottom: 15px;
+  background-color: white;
+
 }
 
 .ebutton-content h2 {
@@ -114,13 +121,16 @@ button {
   font-weight: bold;
   color: #d10016;
   text-align: center;
+  background-color: white;
 }
+
 
 .closebutton {
   position: relative;
   left: 580px;
   font-size: 1.5rem;
   cursor: pointer;
+  color: #d10016;
 }
 
 /*Button css ends here, index.html Starts below*/
@@ -196,20 +206,7 @@ header::after{
 
 /*PLANS AND PROGRESS HTML BELOW THIS POINT*/
 
-#test li {
-  list-style: none;
-  width: 80%;
-  text-align: left;
-  position: relative;
-  left: 415px;
-}
-#contact li {
-  list-style: none;
-  width: 80%;
-  text-align: left;
-  position: relative;
-  left: 300px;
-}
+
 
 #maintitle h2 {
   text-align: center;
@@ -251,9 +248,28 @@ header::after{
   text-align: left;
   position: relative;
   left: 415px;
+  z-index:0
 
 }
 
+#test li {
+  list-style: none;
+  width: 80%;
+  text-align: left;
+  position: relative;
+  left: 415px;
+
+
+
+}
+#contact li {
+  list-style: none;
+  width: 80%;
+  text-align: left;
+  position: relative;
+  left: 300px;
+
+}
 
 
 
