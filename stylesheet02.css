@@ -128,7 +128,8 @@ button {
 .closebutton {
   position: relative;
   left: 580px;
-  font-size: 1.5rem;
+  bottom: 20px;
+  font-size: 3rem;
   cursor: pointer;
   color: #d10016;
 }
@@ -249,6 +250,11 @@ header::after{
   position: relative;
   left: 415px;
   z-index:0
+
+}
+
+.profilemain h2 {
+  font-size: 40px;
 
 }
 
