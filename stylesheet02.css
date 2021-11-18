@@ -578,8 +578,9 @@ video.centre {
 }
 
 img.jobadlogo {
-  position: absolute;
-  right: 20%;
+  float:right;
+  position: relative;
+  left: 0px;
   max-width: 200px;
   height: auto;
 }
