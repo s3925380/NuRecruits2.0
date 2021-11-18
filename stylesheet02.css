@@ -196,8 +196,19 @@ header::after{
 
 /*PLANS AND PROGRESS HTML BELOW THIS POINT*/
 
-#test {
+#test li {
   list-style: none;
+  width: 80%;
+  text-align: left;
+  position: relative;
+  left: 415px;
+}
+#contact li {
+  list-style: none;
+  width: 80%;
+  text-align: left;
+  position: relative;
+  left: 300px;
 }
 
 #maintitle h2 {
@@ -256,6 +267,8 @@ header::after{
 
 
 /*-----------------------lachlans test CSS starts here------------------------*/
+
+
 
 .centerimg {
   display: block;
@@ -515,6 +528,8 @@ header::after{
   margin-right: auto;
   width: 15%;
 }
+
+
 
 /*footer css starts below*/
 #footermain {
