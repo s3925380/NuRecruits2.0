@@ -560,7 +560,11 @@ header::after{
   width: 15%;
 }
 
+#lachlist li{
+  text-align: left;
+  list-style: disc; 
 
+}
 
 /*footer css starts below*/
 #footermain {
