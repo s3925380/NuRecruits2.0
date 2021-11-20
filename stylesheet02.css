@@ -9,6 +9,13 @@ html {
 
 }
 
+.navfixed {
+  position: fixed;
+  width: inherit;
+  top: 0;
+  border-bottom: 5px #16c2d5;
+
+}
 
 p {
   font-family: Space Grotesk, sans-serif;
@@ -158,8 +165,7 @@ header {
   border-width: 5px 10px;
   border-style: solid;
   background: #373F51;
-  max-height: 220px;
-  border-bottom: 5px;
+  max-height: 230px;
 
 }
 
@@ -193,7 +199,7 @@ header::after{
   border-color: #16c2d5;
   border-bottom: -5px;
   margin-bottom: -5px;
-
+  margin-top: 225px;
 
 }
 
@@ -507,7 +513,7 @@ header::after{
   border-color: #16c2d5;
   border-width: 10px;
   border-style: solid;
-  
+  margin-top: 225px;
 }
 
 #contentmain li {
