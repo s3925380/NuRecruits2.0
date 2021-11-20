@@ -146,12 +146,12 @@ a:before {
 .container {
   width:80%;
   margin: 0x auto;
+
 }
 
 
 header {
   width: 98.5%;
-
   text-align: center;
   border-color: #16c2d5;
   border-width: 5px 10px;
@@ -159,6 +159,7 @@ header {
   background: #373F51;
   max-height: 220px;
   border-bottom: 5px;
+
 }
 
 header::after{
@@ -191,10 +192,16 @@ header::after{
   border-color: #16c2d5;
   border-bottom: -5px;
   margin-bottom: -5px;
+  margin-top: 225px;
 
 }
 
-
+.navfixed {
+  position: fixed;
+  top:0;
+  width: 92.5%;
+  z-index: 10;
+}
 
 
 /*PLANS AND PROGRESS HTML BELOW THIS POINT*/
@@ -241,7 +248,7 @@ header::after{
   text-align: left;
   position: relative;
   left: 415px;
-  z-index:0
+  z-index:0;
 
 }
 
@@ -505,6 +512,7 @@ header::after{
   border-color: #16c2d5;
   border-width: 10px;
   border-style: solid;
+  margin-top:225px;
 }
 
 #contentmain li {
@@ -562,7 +570,7 @@ header::after{
 
 #lachlist li{
   text-align: left;
-  list-style: disc; 
+  list-style: disc;
 
 }
 
