@@ -9,6 +9,7 @@ html {
 
 }
 
+
 p {
   font-family: Space Grotesk, sans-serif;
   font-size: 20px;
@@ -192,16 +193,10 @@ header::after{
   border-color: #16c2d5;
   border-bottom: -5px;
   margin-bottom: -5px;
-  margin-top: 225px;
+
 
 }
 
-.navfixed {
-  position: fixed;
-  top:0;
-  width: 92.5%;
-  z-index: 10;
-}
 
 
 /*PLANS AND PROGRESS HTML BELOW THIS POINT*/
@@ -309,7 +304,7 @@ header::after{
   display: inline-block;
   margin-left: 20px;
   padding: 5px;
-  width: 849px;
+  width: 100%;
   position: relative;
   bottom: 80px;
   left: 90px;
@@ -512,7 +507,7 @@ header::after{
   border-color: #16c2d5;
   border-width: 10px;
   border-style: solid;
-  margin-top:225px;
+  
 }
 
 #contentmain li {
