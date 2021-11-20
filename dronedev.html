@@ -103,6 +103,8 @@
 
   <p>After conducting research about which drone hardware to use, it was decided that the ‘DJI Tello drone’ (Tello, 2021) will be used to develop our prototype due to its extremely cheap price and ability to be programmed using python. The team believed this would be a worthy investment as it will continue to provide highly valuable testing results even beyond the timeframe of the project.</p>
 
+  <img src="images/newimages/pnpdrone1.jpg" alt="Image: DJI Tello Drone"></img>
+
   <p>A 3rd party python library named “djitellopy” is freely available and was chosen to be used to construct code that meets our project requirements (damiafuentes/DJITelloPy, 2021). When distributing the code that we develop using the djitellopy library, we must include an MIT License and copyright notice, both of which are supplied on the DJITelloPy GitHub page (DJITelloPy/LICENSE.txt at master  damiafuentes/DJITelloPy, 2021). Research of the djitellopy library and its contents was conducted, to establish a clear understanding of what functions were at our disposal to meet our programs requirements.</p>
 
   <p>During our research we discovered there are many online tutorials that provide techniques to program drones (Develop Path Planning GUI for DJI Tello, 2021) (DJI Tello - Getting Started with Software Development, 2021) (Drone Programming With Python Course, 2021) (Easy Programming of Tello Drone | Python OpenCV Object Tracking, 2021), we attempted to utilise these to take our first steps at writing code, however we underestimated how difficult this would be quickly realised that a significant number of modifications and troubleshooting would be necessary to achieve our goals.</p>
@@ -119,9 +121,13 @@
 
   <p>The first function the team began developing was the static flight path function. There were many errors during development, due to extremely limited knowledge of the djitellopy library, however by utilising the djitellopy SDK 1.3.0.0 (Tello SDK 1.3.0.0, 2021), djitellopy python library and skills developed from various online guides and tutorials, the team managed to develop code that successfully controls a drone by entering set directions for the drone to travel (see appendix). The drone is able to be programmed to travel to a set point along the x, y and z axis and is able to adjust the speed of the drone’s flight.</p>
 
+  <img src="images/newimages/pnpprogramming1.png" alt="Image: Automatic flight path program developed by the team"></img>
+
   <h2>Future Plans</h2>
 
   <p>In future sessions, we planned to further develop this function to ask for user input when determining a flight path and velocity. In the future the goal is to acquire a drone that allows for monitoring of GPS coordinates, the GPS coordinates will be passed to the program to allow for dynamic flight paths depending on destination coordinates. This function will be utilised within the main user interface of our program and provides a vital first step towards the development of our desired program.</p>
+
+  <img src="images/newimages/pnpprogramming2.png" alt="Image: Keypress module developed by the team"></img>
 
   <h2>Manual Control/Camera Feed Program Development</h2>
 
@@ -134,6 +140,8 @@
 
   <p>At the end of the second development session the keypresses were only programmed to print a value as they were pressed, this was solely used for testing purposes and in later sessions we planned to further develop this to assign flight navigation controls to each keypress and to begin developing a method of displaying the camera feed to the user. This manual flight mode will be able to be triggered mid-flight while travelling a pre-set flight path, this will provide improved safety as it allows our drone pilots to monitor and correct drone flights if necessary. Once all features of the manual control/camera feed function are completed we plan to integrate it into the user interface of our program along with the static flight path function.</p>
 
+  <img src="images/newimages/pnpprogramming3.png" alt="Image: Initial development of manual flight control program"></img>
+
   <h2>Further Code Development</h2>
 
   <p>Our next development session was focused around utilising our keypress module to produce a program that controlled the drone with user inputs. This was done by replacing the temporary print statements, inside the keyboard control program, with drone control commands that control the direction, altitude, yaw, and velocity. Surprisingly this worked flawlessly on first try and we decided to assign keystrokes to allow for take-off and landing as well.</p>
@@ -142,6 +150,8 @@
   <h2>Debugging</h2>
 
   <p>We noticed a crash that would occur if a user input the takeoff() command while already in the air, similarly the program would also crash if the drone was told to land while the drone was already on the ground. We solved this issue by using the get_height() function, which allowed us to check if the drone was in the air or on the ground, if the drone was in a state that would cause the program to crash then the command would be ignored by using if-else statements. After some research in the djitellopy library and tweaking of the program we were able to successfully avoid all errors when giving unavailable commands.</p>
+
+  <img src="image/newimages/pnpprogramming4.png" alt="Image: Solution the team implemented to solve crashes during takeoff and landing"></img>
 
   <h2>Camera Feed Functionality Development</h2>
 
@@ -152,6 +162,8 @@
 
   <p>The next task the team took on was the integration of both manual and automatic drone control programs into a single launcher interface, that allowed the user to switch between manual and automatic control by the click of a button. In order to do this, we used the tkinter python library, which allowed us to create a window with clickable buttons. We were able to assign functions to each button, so the plan was to have one button for automatic and one button for manual control of the drone. A while loop was created to run the launcher and to execute the functions until the user click the other button or closes the launcher. Upon first implementation there were many issues with the code, and it failed to run, many hours were spent attempting to resolve the issue however the problem seemed to fall outside the scope of what we could achieve in the remaining limited time. It was decided to instead implement the automatic control as a feature within the manual control program. This allowed for a simpler implementation and meant that the user only needs one window open to operate the program.
   </p>
+
+  <img src="images/newimages/pnpdrone2.png" alt="Image: Finalised UI with live camera feed"></img>
 
   <h2>Testing</h2>
 
