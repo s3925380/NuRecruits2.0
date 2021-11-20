@@ -507,6 +507,11 @@ header::after{
   border-style: solid;
 }
 
+#contentmain li {
+  width: 96.65%;
+  text-align: center;
+  list-style: none;
+}
 
 #contentmain h1 {
 
