@@ -486,6 +486,13 @@ header::after{
   display: block;
 }
 
+#timeframe {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  border-radius: 25px;
+}
 
 #contentmain {
   font-family: Space Grotesk, sans-serif;
@@ -532,7 +539,7 @@ header::after{
 
 
 #contentmain img {
-  
+
   display: block;
   margin-left: auto;
   margin-right: auto;
