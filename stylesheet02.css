@@ -14,7 +14,7 @@ html {
   width: inherit;
   top: 0;
   border-bottom: 5px #16c2d5;
-
+  z-index: 10;
 }
 
 p {
